@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,29 +20,30 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
     }
-    public  void onClearButtonClick (View v) {
 
-        EditText thousandTextInput = (EditText)findViewById(R.id.editText1);
-        EditText fiveHundredTextInput = (EditText)findViewById(R.id.editText2);
-        EditText hundredTextInput = (EditText)findViewById(R.id.editText3);
-        EditText fiftyTextInput = (EditText)findViewById(R.id.editText4);
-        EditText twentyTextInput = (EditText)findViewById(R.id.editText5);
-        EditText tenTextInput = (EditText)findViewById(R.id.editText6);
-        EditText fiveTextInput = (EditText)findViewById(R.id.editText7);
-        EditText twoTextInput = (EditText)findViewById(R.id.editText8);
-        EditText oneTextInput = (EditText)findViewById(R.id.editText9);
+    public void onClearButtonClick(View v) {
 
-        EditText thousandResultText = (EditText)findViewById(R.id.editText18);
-        EditText fivehundredResultText = (EditText)findViewById(R.id.editText19);
-        EditText hundredResultText = (EditText)findViewById(R.id.editText20);
-        EditText fiftyResultText = (EditText)findViewById(R.id.editText21);
-        EditText twentyResultText = (EditText)findViewById(R.id.editText22);
-        EditText tenResultText = (EditText)findViewById(R.id.editText23);
-        EditText fiveResultText = (EditText)findViewById(R.id.editText24);
-        EditText twoResultText = (EditText)findViewById(R.id.editText25);
-        EditText oneResultText = (EditText)findViewById(R.id.editText26);
+        EditText thousandTextInput = (EditText) findViewById(R.id.editText1);
+        EditText fiveHundredTextInput = (EditText) findViewById(R.id.editText2);
+        EditText hundredTextInput = (EditText) findViewById(R.id.editText3);
+        EditText fiftyTextInput = (EditText) findViewById(R.id.editText4);
+        EditText twentyTextInput = (EditText) findViewById(R.id.editText5);
+        EditText tenTextInput = (EditText) findViewById(R.id.editText6);
+        EditText fiveTextInput = (EditText) findViewById(R.id.editText7);
+        EditText twoTextInput = (EditText) findViewById(R.id.editText8);
+        EditText oneTextInput = (EditText) findViewById(R.id.editText9);
 
-        EditText finalResultText = (EditText)findViewById(R.id.editText27);
+        EditText thousandResultText = (EditText) findViewById(R.id.editText18);
+        EditText fivehundredResultText = (EditText) findViewById(R.id.editText19);
+        EditText hundredResultText = (EditText) findViewById(R.id.editText20);
+        EditText fiftyResultText = (EditText) findViewById(R.id.editText21);
+        EditText twentyResultText = (EditText) findViewById(R.id.editText22);
+        EditText tenResultText = (EditText) findViewById(R.id.editText23);
+        EditText fiveResultText = (EditText) findViewById(R.id.editText24);
+        EditText twoResultText = (EditText) findViewById(R.id.editText25);
+        EditText oneResultText = (EditText) findViewById(R.id.editText26);
+
+        EditText finalResultText = (EditText) findViewById(R.id.editText27);
 
         finalResultText.setText("");
 
@@ -68,43 +70,42 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public  void onCalculateButtonClick (View v){
+    public void onCalculateButtonClick(View v) {
 
         //for user input
-        EditText thousandTextInput = (EditText)findViewById(R.id.editText1);
-        EditText fiveHundredTextInput = (EditText)findViewById(R.id.editText2);
-        EditText hundredTextInput = (EditText)findViewById(R.id.editText3);
-        EditText fiftyTextInput = (EditText)findViewById(R.id.editText4);
-        EditText twentyTextInput = (EditText)findViewById(R.id.editText5);
-        EditText tenTextInput = (EditText)findViewById(R.id.editText6);
-        EditText fiveTextInput = (EditText)findViewById(R.id.editText7);
-        EditText twoTextInput = (EditText)findViewById(R.id.editText8);
-        EditText oneTextInput = (EditText)findViewById(R.id.editText9);
+        EditText thousandTextInput = (EditText) findViewById(R.id.editText1);
+        EditText fiveHundredTextInput = (EditText) findViewById(R.id.editText2);
+        EditText hundredTextInput = (EditText) findViewById(R.id.editText3);
+        EditText fiftyTextInput = (EditText) findViewById(R.id.editText4);
+        EditText twentyTextInput = (EditText) findViewById(R.id.editText5);
+        EditText tenTextInput = (EditText) findViewById(R.id.editText6);
+        EditText fiveTextInput = (EditText) findViewById(R.id.editText7);
+        EditText twoTextInput = (EditText) findViewById(R.id.editText8);
+        EditText oneTextInput = (EditText) findViewById(R.id.editText9);
 
 
         //multiplier value
-        EditText thousand = (EditText)findViewById(R.id.editText);
-        EditText fivehundred = (EditText)findViewById(R.id.editText10);
-        EditText hundred = (EditText)findViewById(R.id.editText11);
-        EditText fifty = (EditText)findViewById(R.id.editText12);
-        EditText twenty = (EditText)findViewById(R.id.editText13);
-        EditText ten= (EditText)findViewById(R.id.editText14);
-        EditText five = (EditText)findViewById(R.id.editText15);
-        EditText two = (EditText)findViewById(R.id.editText16);
-        EditText one = (EditText)findViewById(R.id.editText17);
-
+        EditText thousand = (EditText) findViewById(R.id.editText);
+        EditText fivehundred = (EditText) findViewById(R.id.editText10);
+        EditText hundred = (EditText) findViewById(R.id.editText11);
+        EditText fifty = (EditText) findViewById(R.id.editText12);
+        EditText twenty = (EditText) findViewById(R.id.editText13);
+        EditText ten = (EditText) findViewById(R.id.editText14);
+        EditText five = (EditText) findViewById(R.id.editText15);
+        EditText two = (EditText) findViewById(R.id.editText16);
+        EditText one = (EditText) findViewById(R.id.editText17);
 
 
         //result value text field
-        EditText thousandResultText = (EditText)findViewById(R.id.editText18);
-        EditText fivehundredResultText = (EditText)findViewById(R.id.editText19);
-        EditText hundredResultText = (EditText)findViewById(R.id.editText20);
-        EditText fiftyResultText = (EditText)findViewById(R.id.editText21);
-        EditText twentyResultText = (EditText)findViewById(R.id.editText22);
-        EditText tenResultText = (EditText)findViewById(R.id.editText23);
-        EditText fiveResultText = (EditText)findViewById(R.id.editText24);
-        EditText twoResultText = (EditText)findViewById(R.id.editText25);
-        EditText oneResultText = (EditText)findViewById(R.id.editText26);
+        EditText thousandResultText = (EditText) findViewById(R.id.editText18);
+        EditText fivehundredResultText = (EditText) findViewById(R.id.editText19);
+        EditText hundredResultText = (EditText) findViewById(R.id.editText20);
+        EditText fiftyResultText = (EditText) findViewById(R.id.editText21);
+        EditText twentyResultText = (EditText) findViewById(R.id.editText22);
+        EditText tenResultText = (EditText) findViewById(R.id.editText23);
+        EditText fiveResultText = (EditText) findViewById(R.id.editText24);
+        EditText twoResultText = (EditText) findViewById(R.id.editText25);
+        EditText oneResultText = (EditText) findViewById(R.id.editText26);
 
         long thousandValue;
         long fivehundredValue;
@@ -117,82 +118,70 @@ public class MainActivity extends AppCompatActivity {
         long oneValue;
 
 
-
-        if (thousandTextInput.getText().toString().matches(""))
-        {
+        if (thousandTextInput.getText().toString().matches("")) {
             //thousandTextInput.setText(Integer.toString(0));
-           thousandValue = 0 * Long.parseLong(thousand.getText().toString());
-        }
-        else {
+            thousandValue = 0 * Long.parseLong(thousand.getText().toString());
+        } else {
             thousandValue = Long.parseLong(thousandTextInput.getText().toString()) * Integer.parseInt(thousand.getText().toString());
         }
 
-        if (fiveHundredTextInput.getText().toString().matches(""))
-        {
+        if (fiveHundredTextInput.getText().toString().matches("")) {
             //fiveHundredTextInput.setText(Integer.toString(0));
-             fivehundredValue = 0 * Long.parseLong(fivehundred.getText().toString());
-        }
-        else {
-             fivehundredValue = Long.parseLong(fiveHundredTextInput.getText().toString()) * Integer.parseInt(fivehundred.getText().toString());
+            fivehundredValue = 0 * Long.parseLong(fivehundred.getText().toString());
+        } else {
+            fivehundredValue = Long.parseLong(fiveHundredTextInput.getText().toString()) * Integer.parseInt(fivehundred.getText().toString());
         }
 
 
-        if (hundredTextInput.getText().toString().matches("")){
+        if (hundredTextInput.getText().toString().matches("")) {
             //hundredTextInput.setText(Integer.toString(0));
-             hundredValue = 0 * Long.parseLong(hundred.getText().toString());
+            hundredValue = 0 * Long.parseLong(hundred.getText().toString());
 
-        }
-        else {
+        } else {
             hundredValue = Long.parseLong(hundredTextInput.getText().toString()) * Integer.parseInt(hundred.getText().toString());
 
         }
 
-        if (fiftyTextInput.getText().toString().matches("")){
+        if (fiftyTextInput.getText().toString().matches("")) {
             //fiftyTextInput.setText(Integer.toString(0));
             fiftyValue = 0 * Long.parseLong(fifty.getText().toString());
-        }
-        else {
+        } else {
             fiftyValue = Long.parseLong(fiftyTextInput.getText().toString()) * Integer.parseInt(fifty.getText().toString());
         }
 
-        if (twentyTextInput.getText().toString().matches("")){
+        if (twentyTextInput.getText().toString().matches("")) {
             //twentyTextInput.setText(Integer.toString(0));
-             twentyValue = 0 * Long.parseLong(twenty.getText().toString());
-        }
-        else {
+            twentyValue = 0 * Long.parseLong(twenty.getText().toString());
+        } else {
             twentyValue = Long.parseLong(twentyTextInput.getText().toString()) * Integer.parseInt(twenty.getText().toString());
         }
 
-        if (tenTextInput.getText().toString().matches("")){
+        if (tenTextInput.getText().toString().matches("")) {
             //tenTextInput.setText(Integer.toString(0));
-             tenValue = 0 * Long.parseLong(ten.getText().toString());
-        }
-        else {
-             tenValue = Long.parseLong(tenTextInput.getText().toString()) * Integer.parseInt(ten.getText().toString());
-        }
-
-        if (fiveTextInput.getText().toString().matches("")){
-           // fiveTextInput.setText(Integer.toString(0));
-             fiveValue = 0 * Long.parseLong(five.getText().toString());
-        }
-        else {
-             fiveValue = Long.parseLong(fiveTextInput.getText().toString()) * Integer.parseInt(five.getText().toString());
+            tenValue = 0 * Long.parseLong(ten.getText().toString());
+        } else {
+            tenValue = Long.parseLong(tenTextInput.getText().toString()) * Integer.parseInt(ten.getText().toString());
         }
 
-        if (twoTextInput.getText().toString().matches("")){
+        if (fiveTextInput.getText().toString().matches("")) {
+            // fiveTextInput.setText(Integer.toString(0));
+            fiveValue = 0 * Long.parseLong(five.getText().toString());
+        } else {
+            fiveValue = Long.parseLong(fiveTextInput.getText().toString()) * Integer.parseInt(five.getText().toString());
+        }
+
+        if (twoTextInput.getText().toString().matches("")) {
             //twoTextInput.setText(Integer.toString(0));
-             twoValue = 0 * Long.parseLong(two.getText().toString());
-        }
-        else {
+            twoValue = 0 * Long.parseLong(two.getText().toString());
+        } else {
             twoValue = Long.parseLong(twoTextInput.getText().toString()) * Integer.parseInt(two.getText().toString());
         }
 
-        if (oneTextInput.getText().toString().matches("")){
+        if (oneTextInput.getText().toString().matches("")) {
             //oneTextInput.setText(Integer.toString(0));
-             oneValue = 0 * Long.parseLong(one.getText().toString());
-        }
-        else {
-             oneValue = Long.parseLong(oneTextInput.getText().toString()) * Integer.parseInt(one.getText().toString());
+            oneValue = 0 * Long.parseLong(one.getText().toString());
+        } else {
+            oneValue = Long.parseLong(oneTextInput.getText().toString()) * Integer.parseInt(one.getText().toString());
         }
 
 
@@ -209,11 +198,10 @@ public class MainActivity extends AppCompatActivity {
         //oneResultText.setText(Integer.toString(oneValue));
 
 
-
-        long totalSum = thousandValue + fivehundredValue + hundredValue + fiftyValue + twentyValue + tenValue + fiveValue + twoValue + oneValue ;
+        long totalSum = thousandValue + fivehundredValue + hundredValue + fiftyValue + twentyValue + tenValue + fiveValue + twoValue + oneValue;
 
         //int totalSum = oneValue;
-        EditText finalResultText = (EditText)findViewById(R.id.editText27);
+        EditText finalResultText = (EditText) findViewById(R.id.editText27);
 
         finalResultText.setText(Long.toString(totalSum));
 
@@ -221,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
         //TextView thousandDisplay = (TextView)findViewById(R.id.resultTxtViewID);
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
