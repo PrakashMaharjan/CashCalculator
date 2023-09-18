@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    //compileSdkVersion 33
     defaultConfig {
+        compileSdk 33
         applicationId "com.example.prakashmaharjan.fastmoneycalculator"
         minSdkVersion 16
         targetSdkVersion 33
